@@ -1,4 +1,4 @@
-import { getScore } from "js/main-api.js";
+import { getScore } from "/Front-end-fastapi/js/main-api.js";
 
 async function fetchScore() {
   try {
@@ -11,11 +11,11 @@ async function fetchScore() {
       typeof score.score !== "number" ||
       !localStorage.getItem("Authentication")
     ) {
-      location.href = "view/login.html";
+      location.href = "/Front-end-fastapi/view/login.html";
     }
   } catch (error) {
     console.error("Error fetching score:", error);
-    // location.href = "/view/test.html";
+    // location.href = "/Front-end-fastapi//view/test.html";
   }
 }
 fetchScore();

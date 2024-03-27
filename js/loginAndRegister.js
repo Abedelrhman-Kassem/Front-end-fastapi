@@ -4,7 +4,7 @@ const usernameInput = document.getElementById("username");
 const passwordInput = document.getElementById("password");
 
 if (localStorage.getItem("Authentication")) {
-  location.href = "test.html";
+  location.href = "/Front-end-fastapi/view/test.html";
 }
 
 form.addEventListener("submit", (e) => {
@@ -47,7 +47,7 @@ async function sendUsernameAndPassword(url, data, endPoint) {
       JSON.stringify(responseData.Authentication)
     );
 
-    location.href = "./test.html";
+    location.href = "/Front-end-fastapi/view/test.html";
 
     // catch error
   } catch (error) {
