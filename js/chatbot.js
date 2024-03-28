@@ -11,7 +11,7 @@ let PERSON_NAME;
 async function getusername(auth_token) {
   try {
     const response = await fetch(
-      `http://127.0.0.1:8000/get-user?auth_token=${auth_token}`
+      `https://backe-end-fastpi.onrender.com/get-user?auth_token=${auth_token}`
     );
 
     if (!response.ok) {
@@ -54,13 +54,16 @@ msgerForm.addEventListener("submit", async function (e) {
 
 async function getBotMessages(data) {
   try {
-    const response = await fetch(`http://127.0.0.1:8000/chatbot`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+    const response = await fetch(
+      `https://backe-end-fastpi.onrender.com/chatbot`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }
+    );
 
     if (!response.ok) {
       const res = await response.text();
