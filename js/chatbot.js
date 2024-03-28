@@ -24,7 +24,8 @@ async function getusername(auth_token) {
     const responseData = await response.json();
     PERSON_NAME = responseData.name.split(" ")[0];
   } catch (error) {
-    location.href = "./login.html";
+    PERSON_NAME = "User";
+    // location.href = "./login.html";
   }
 }
 
