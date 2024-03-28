@@ -54,7 +54,7 @@ const header = `
                             >
                         </li>
                         <li>
-                            <a class="dropdown-item text-dark fs-5 fw-bold" href="/Front-end-fastapi//view/modules/module-2.html"
+                            <a class="dropdown-item text-dark fs-5 fw-bold" href="/Front-end-fastapi/view/modules/module-2.html"
                             >الوحده الثانيه</a
                             >
                         </li>
@@ -109,7 +109,7 @@ const header = `
                     <a class="nav-link text-white fs-5 fw-bold" href="#">الأنشطه</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white fs-5 fw-bold" href="#"
+                    <a class="nav-link text-white fs-5 fw-bold" href="/Front-end-fastapi/view/chatbot.html"
                     >شات بوت</a
                     >
                 </li>
