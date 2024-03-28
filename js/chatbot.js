@@ -17,7 +17,7 @@ async function getusername(auth_token) {
     if (!response.ok) {
       const res = await response.text();
       const errorMessage = JSON.parse(res).detail;
-      localStorage.clear();
+      // localStorage.clear();
       throw new Error(errorMessage);
     }
 

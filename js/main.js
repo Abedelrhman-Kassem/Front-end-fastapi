@@ -5,7 +5,7 @@ async function fetchScore() {
     const auth_token = JSON.parse(localStorage.getItem("Authentication"));
     const score = await getScore(auth_token);
 
-    console.log(score);
+    // console.log(score);
 
     if (
       typeof score.score !== "number" ||
